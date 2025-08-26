@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_1308c930a915ff7d358d883478cace7f {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+
+            <style>html, body {
+                width: 100%;
+                height: 100%;
+                margin: 0;
+                padding: 0;
+            }
+            </style>
+
+            <style>#map {
+                position:absolute;
+                top:0;
+                bottom:0;
+                right:0;
+                left:0;
+                }
+            </style>
+
+            <script>
+                L_NO_TOUCH = false;
+                L_DISABLE_3D = false;
+            </script>
+
+        
+    <script src="https://cdn.jsdelivr.net/gh/ardhi/Leaflet.MousePosition/src/L.Control.MousePosition.min.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/ardhi/Leaflet.MousePosition/src/L.Control.MousePosition.min.css"/>
+    <script src="https://cdn.jsdelivr.net/gh/ljagis/leaflet-measure@2.1.7/dist/leaflet-measure.min.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/ljagis/leaflet-measure@2.1.7/dist/leaflet-measure.min.css"/>
+</head>
+<body>
+    
+    <h4 style="position: fixed; top: 10px; left: 50px; z-index: 9999; background: rgba(255,255,255,.8); padding:6px 10px; border-radius:6px">(Map 3) Proximity — CCSFS SLC 40</h4>
+    
+            <div class="folium-map" id="map_1308c930a915ff7d358d883478cace7f" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_1308c930a915ff7d358d883478cace7f = L.map(
+                "map_1308c930a915ff7d358d883478cace7f",
+                {
+                    center: [28.5618571, -80.577366],
+                    crs: L.CRS.EPSG3857,
+                    ...{
+  "zoom": 12,
+  "zoomControl": true,
+  "preferCanvas": false,
+}
+
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_cdb454b70fb2bedc905eb0cab5d5c41d = L.tileLayer(
+                "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {
+  "minZoom": 0,
+  "maxZoom": 19,
+  "maxNativeZoom": 19,
+  "noWrap": false,
+  "attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors",
+  "subdomains": "abc",
+  "detectRetina": false,
+  "tms": false,
+  "opacity": 1,
+}
+
+            );
+        
+    
+            tile_layer_cdb454b70fb2bedc905eb0cab5d5c41d.addTo(map_1308c930a915ff7d358d883478cace7f);
+        
+    
+            var marker_34bf3ae72204ddcb07a71f24a28a0859 = L.marker(
+                [28.5618571, -80.577366],
+                {
+}
+            ).addTo(map_1308c930a915ff7d358d883478cace7f);
+        
+    
+            var icon_8a30185b86b3bc258b0b31042f5b3949 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "rocket",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+            marker_34bf3ae72204ddcb07a71f24a28a0859.bindTooltip(
+                `<div>
+                     CCSFS SLC 40 (Launch Site)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_34bf3ae72204ddcb07a71f24a28a0859.setIcon(icon_8a30185b86b3bc258b0b31042f5b3949);
+            
+    
+            var marker_5266f71d33206080c7315220454a803e = L.marker(
+                [28.57, -80.56],
+                {
+}
+            ).addTo(map_1308c930a915ff7d358d883478cace7f);
+        
+    
+            var icon_b77e8045386f6c5d82a1b97bf416ecc3 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+            marker_5266f71d33206080c7315220454a803e.bindTooltip(
+                `<div>
+                     Coastline (~1.92 km)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_5266f71d33206080c7315220454a803e.setIcon(icon_b77e8045386f6c5d82a1b97bf416ecc3);
+            
+    
+            var marker_f1d2c4b412001a7c20222a733cbb2ce1 = L.marker(
+                [28.563, -80.585],
+                {
+}
+            ).addTo(map_1308c930a915ff7d358d883478cace7f);
+        
+    
+            var icon_6726084f9652a7e2bb46772054f42527 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "purple",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+            marker_f1d2c4b412001a7c20222a733cbb2ce1.bindTooltip(
+                `<div>
+                     Highway (~0.76 km)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_f1d2c4b412001a7c20222a733cbb2ce1.setIcon(icon_6726084f9652a7e2bb46772054f42527);
+            
+    
+            var marker_1c7622dbc536f7405d766eff7250ac99 = L.marker(
+                [28.562, -80.59],
+                {
+}
+            ).addTo(map_1308c930a915ff7d358d883478cace7f);
+        
+    
+            var icon_9bbaa05899f07d02ee96ffc018673a2c = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+            marker_1c7622dbc536f7405d766eff7250ac99.bindTooltip(
+                `<div>
+                     Railway (~1.23 km)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_1c7622dbc536f7405d766eff7250ac99.setIcon(icon_9bbaa05899f07d02ee96ffc018673a2c);
+            
+    
+            var poly_line_c85052b97ba9d875818d86497e63acc5 = L.polyline(
+                [[28.5618571, -80.577366], [28.57, -80.56]],
+                {"bubblingMouseEvents": true, "color": "gray", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "gray", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.8, "smoothFactor": 1.0, "stroke": true, "weight": 2}
+            ).addTo(map_1308c930a915ff7d358d883478cace7f);
+        
+    
+            var marker_f34bca2dbc09249958f1e0bf9aa8eb7e = L.marker(
+                [28.57, -80.56],
+                {
+}
+            ).addTo(map_1308c930a915ff7d358d883478cace7f);
+        
+    
+            var div_icon_83c3755fe4616223cd59493a572d22b6 = L.divIcon({
+  "html": "\u003cdiv style=\"font-size: 12px; color: #111; background: rgba(255,255,255,.8); padding:2px 4px; border-radius:4px;\"\u003eCoastline: 1.92 km\u003c/div\u003e",
+  "className": "empty",
+});
+        
+    
+                marker_f34bca2dbc09249958f1e0bf9aa8eb7e.setIcon(div_icon_83c3755fe4616223cd59493a572d22b6);
+            
+    
+            var poly_line_32300cc86019cca26a9db9d3f55d0361 = L.polyline(
+                [[28.5618571, -80.577366], [28.563, -80.585]],
+                {"bubblingMouseEvents": true, "color": "gray", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "gray", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.8, "smoothFactor": 1.0, "stroke": true, "weight": 2}
+            ).addTo(map_1308c930a915ff7d358d883478cace7f);
+        
+    
+            var marker_f318911eccec1d6fb3c0e7bf921502fe = L.marker(
+                [28.563, -80.585],
+                {
+}
+            ).addTo(map_1308c930a915ff7d358d883478cace7f);
+        
+    
+            var div_icon_d76d2ee7b4ac0ace4c5537b26f9297a8 = L.divIcon({
+  "html": "\u003cdiv style=\"font-size: 12px; color: #111; background: rgba(255,255,255,.8); padding:2px 4px; border-radius:4px;\"\u003eHighway: 0.76 km\u003c/div\u003e",
+  "className": "empty",
+});
+        
+    
+                marker_f318911eccec1d6fb3c0e7bf921502fe.setIcon(div_icon_d76d2ee7b4ac0ace4c5537b26f9297a8);
+            
+    
+            var poly_line_1c200af53b0ad2b93e409b092f3e98a2 = L.polyline(
+                [[28.5618571, -80.577366], [28.562, -80.59]],
+                {"bubblingMouseEvents": true, "color": "gray", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "gray", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.8, "smoothFactor": 1.0, "stroke": true, "weight": 2}
+            ).addTo(map_1308c930a915ff7d358d883478cace7f);
+        
+    
+            var marker_58ddb652c157fca59282b4f8912d7661 = L.marker(
+                [28.562, -80.59],
+                {
+}
+            ).addTo(map_1308c930a915ff7d358d883478cace7f);
+        
+    
+            var div_icon_dc3050b4a602cd072571a64020dab02f = L.divIcon({
+  "html": "\u003cdiv style=\"font-size: 12px; color: #111; background: rgba(255,255,255,.8); padding:2px 4px; border-radius:4px;\"\u003eRailway: 1.23 km\u003c/div\u003e",
+  "className": "empty",
+});
+        
+    
+                marker_58ddb652c157fca59282b4f8912d7661.setIcon(div_icon_dc3050b4a602cd072571a64020dab02f);
+            
+    
+            var mouse_position_192fdc8e577f8e7fbf9674ba4941434e = new L.Control.MousePosition(
+                {
+  "position": "topright",
+  "separator": " : ",
+  "emptyString": "Unavailable",
+  "lngFirst": false,
+  "numDigits": 5,
+  "prefix": "Lat/Lon:",
+}
+            );
+            mouse_position_192fdc8e577f8e7fbf9674ba4941434e.options["latFormatter"] =
+                undefined;
+            mouse_position_192fdc8e577f8e7fbf9674ba4941434e.options["lngFormatter"] =
+                undefined;
+            map_1308c930a915ff7d358d883478cace7f.addControl(mouse_position_192fdc8e577f8e7fbf9674ba4941434e);
+        
+    
+            var measure_control_7f04227d033e65e07adfb913b3834150 = new L.Control.Measure(
+                {
+  "position": "topright",
+  "primaryLengthUnit": "meters",
+  "secondaryLengthUnit": "miles",
+  "primaryAreaUnit": "sqmeters",
+  "secondaryAreaUnit": "acres",
+});
+            map_1308c930a915ff7d358d883478cace7f.addControl(measure_control_7f04227d033e65e07adfb913b3834150);
+
+            // Workaround for using this plugin with Leaflet>=1.8.0
+            // https://github.com/ljagis/leaflet-measure/issues/171
+            L.Control.Measure.include({
+                _setCaptureMarkerIcon: function () {
+                    // disable autopan
+                    this._captureMarker.options.autoPanOnFocus = false;
+                    // default function
+                    this._captureMarker.setIcon(
+                        L.divIcon({
+                            iconSize: this._map.getSize().multiplyBy(2)
+                        })
+                    );
+                },
+            });
+
+        
+</script>
+</html>

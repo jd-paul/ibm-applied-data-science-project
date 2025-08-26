@@ -1,0 +1,8 @@
+landing_outcome,count
+No attempt,15
+Failure (drone ship),6
+Success (drone ship),5
+Success (ground pad),3
+Success,3
+Unknown,2
+Failure,2

@@ -1,0 +1,5 @@
+model,accuracy
+LogisticRegression,1.0
+SVM (RBF),1.0
+DecisionTree,1.0
+KNN (k=7),1.0
